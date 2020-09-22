@@ -12,3 +12,4 @@ chown root:nginx /var/www/localhost/*
 #ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key
 #ssh-keygen -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key
 #ssh-keygen -t ecdsa -f /etc/ssh/ssh_host_ed25519_key
+#/usr/sbin/sshd -f /etc/ssh/sshd_config
