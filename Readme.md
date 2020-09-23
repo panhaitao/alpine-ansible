@@ -1,7 +1,7 @@
 # BUILD
 
-`docker build -t alipine-nginx:latest .`
+`docker build -t alipine-ansible:latest .`
 
 # RUN
 
-`docker run --net=host -t -i -d alipine-nginx -v /home/shenlan/workspaces/SoldierSuit/:/var/www/localhost/htdocs/`
+`docker run --net=host -t -i -d alipine-ansible`
