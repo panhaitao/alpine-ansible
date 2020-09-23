@@ -1,7 +1,7 @@
 # BUILD
 
-`docker build -t alipine-ansible:latest .`
+`docker build -t alpine-ansible:latest .`
 
 # RUN
 
-`docker run --net=host -t -i -d alipine-ansible`
+`docker run --net=host -t -i -d alpine-ansible`
