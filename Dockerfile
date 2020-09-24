@@ -6,7 +6,8 @@ ADD scripts/set_root_pw.sh /
 RUN /set_root_pw.sh $ROOT_PW
 
 ADD conf/repositories /etc/apk/repositories 
-RUN apk --update add nginx git ansible openssh sshpass curl openjdk11-jre
+RUN apk --update add nginx git ansible openssh sshpass curl openjdk11-jre python3
+RUN pip3 install ucloud-sdk-python3
 
 ENV JAVA_HOME="/usr/lib/jvm/default-jvm/"
 ENV PATH=$PATH:${JAVA_HOME}/bin
