@@ -9,7 +9,7 @@ ssh-keygen -t ecdsa -f /etc/ssh/ssh_host_ed25519_key -P "" -q
 nohup /usr/sbin/sshd -f /etc/ssh/sshd_config &>/tmp/log &
 
 mkdir -pv /data/ 
-cd /data && git clone https://github.com/panhaitao/ansible-playbook-store.git playbook
+cd /data && git clone https://github.com/panhaitao/Playbook-Performance-Test.git playbook
 
 mkdir -p /run/nginx/
 touch /run/nginx/nginx.pid
