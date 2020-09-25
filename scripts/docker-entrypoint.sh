@@ -2,6 +2,7 @@
 
 /set_root_pw.sh $ROOT_PW
 
+ssh-keygen -t rsa -b 2048 -f $HOME/.ssh/id_rsa -P "" -q
 ssh-keygen -t rsa -b 2048 -f /etc/ssh/ssh_host_rsa_key -P "" -q
 ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -P "" -q
 ssh-keygen -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key -P "" -q
