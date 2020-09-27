@@ -12,6 +12,5 @@ ROOT_PW  default is admin
 
 # Content
 
-- git
+- git sshd jmeter nginx
 - ansible and some playbooks
-- sshd
