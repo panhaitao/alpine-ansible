@@ -11,7 +11,7 @@ RUN pip3 install ucloud-sdk-python3
 
 ENV JAVA_HOME="/usr/lib/jvm/default-jvm/"
 ENV PATH=$PATH:${JAVA_HOME}/bin
-RUN cd /tmp && wget http://mirrors.ustc.edu.cn/apache/jmeter/binaries/apache-jmeter-5.3.tgz && tar -xvpf apache-jmeter-5.3.tgz -C /home/ 
+RUN cd /tmp && wget http://mirrors.ustc.edu.cn/apache/jmeter/binaries/apache-jmeter-5.2.1.tgz && tar -xvpf apache-jmeter-5.2.1.tgz -C /home/ 
 
 RUN rm -rf /var/cache/apk/*
 RUN rm -rvf /tmp/*.tgz
