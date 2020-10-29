@@ -7,7 +7,7 @@ RUN /set_root_pw.sh $ROOT_PW
 
 ADD conf/repositories /etc/apk/repositories 
 RUN apk --update add nginx git ansible openssh sshpass curl openjdk11-jre python3 py3-pip
-RUN pip3 install ucloud-sdk-python3
+RUN pip3 install ucloud-sdk-python3 pywinrm kerberos
 
 RUN mkdir -pv /data/ && cd /data && rm -rvf playbook && git clone https://github.com/panhaitao/Playbook-Performance-Test.git playbook
 
